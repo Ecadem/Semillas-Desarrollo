@@ -1,0 +1,21 @@
+<mat-drawer-container class="example-container" autosize>
+    
+  <!-- Sidenav Section     -->
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-toolbar></app-toolbar>
+  </mat-drawer>
+  
+  <!-- Toolbar Section -->
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Ecadem Admin</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+  
+  <!-- Component Container Section -->
+  <div class="container full-width p-3">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
